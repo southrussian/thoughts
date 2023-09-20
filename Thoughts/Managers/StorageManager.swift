@@ -11,18 +11,12 @@ import FirebaseStorage
 final class StorageManager {
     static let shared = StorageManager()
     
-    private let storage = Storage.storage()
+    private let storage = Storage.storage().reference()
     private init() { }
     
-    public func insertBlogPost(with post: String, user: String, completion: @escaping (Bool) -> Void) {
+    public func uploadUserProfilePicture(email: String, image: URL?, completion: @escaping (Bool) -> Void) {
         
     }
     
-    public func getPostsForUser(with post: String, user: String, completion: @escaping ([String]) -> Void) {
-        
-    }
-    
-    public func insertUser(user: String, completion: @escaping (Bool) -> Void) {
-        
-    }
+
 }
